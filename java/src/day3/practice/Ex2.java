@@ -13,12 +13,14 @@ public class Ex2 {
 		str1 = score1 >= 60 ? "pass" : "fail";
 		System.out.println("Do you pass 65 points?"+str1);
 		
-		/*Scanner sc = new Scanner(System.in);
+		/* 강사님 예:
+		 * Scanner sc = new Scanner(System.in);
 		 * System.out.println("input score : ");
 		 * int score = sc.nextInt();
-		 * boolean result = score >= 60;
+		 * 
+		 * String result = score >= 60 ? "pass" : "fail";
 		 * System.out.println("Do you pass " + score + "points?" +result);
-		 * sc.colse();
+		 * sc.close();
 		*/
 
 	}
