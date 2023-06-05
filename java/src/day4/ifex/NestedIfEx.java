@@ -10,9 +10,9 @@ public static void main(String[] args) {
 		//2의배수
 		if (num % 2 == 0) {
 		//3의 배수
-		if(num % 3 == 0) {
-			System.out.println("6의 배수");
-			}
+			if(num % 3 == 0) {
+				System.out.println("6의 배수");
+				}	
 			//아닌수 2의배수
 			else {
 				System.out.println("2의 배수");
