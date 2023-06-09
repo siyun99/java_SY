@@ -14,8 +14,6 @@ public class IfMultipleEx1 {
 
 		num = sc.nextInt();
 
-
-
 		if((num % 2) == 0) {
 
 			System.out.println(num + "는(은) 2의 배수입니다");
