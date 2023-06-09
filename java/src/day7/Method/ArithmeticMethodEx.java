@@ -10,9 +10,15 @@ public class ArithmeticMethodEx {
 		System.out.println(mod(1,2));
 		sum2(1,2);
 		//System.out.println(1+2);
+		//1+2+3
+		int num1=1, num2=2, num3=3;
+		int res = sum(num1,num2);
+		res = sum(res,num3);
+		System.out.println(res);
 	}
 	/**
 	 * 주어진 num1, num2의 합을 출력하는 메소드
+	 * (더하는 기능 + 출력하는 기능)
 	 * @param num1 정수1
 	 * @param num2 정수2
 	 */
