@@ -94,7 +94,30 @@ public class LibraryController {
 	}
 
 	private void retrunBook() {
-		// TODO Auto-generated method stub
+		//엔터 처리
+		sc.nextLine();
+		//반납도서 번호를 입력
+		System.out.println("도서 번호");
+		String num = sc.nextLine();
+		//대출한 도서가 아니면 반납을 X
+		int index = bookList.indexOf(new Book(num, null, null, null));
+		if(index == -1) {
+			System.out.println("대출한 도서가 아닙니다.");
+			return;
+		}
+		//맞으면 반납
+		//반납한 도서의 상태를 대출 가능으로 수정
+		Book returnBook = bookList.get(index);
+		returnBook.returnBook();
+		
+		//대출열람 리스트에서 대출한 도서에 반납일을 오늘 날짜로 수정
+		//반납한 도서의 대출 열람을 찾아야 함.
+		int lbIndex = loanList.lastIndexOf(new LoanBrowsing(returnBook, null, 14));
+		LoanBrowsing tmpLb = loanList.get(lbIndex);
+		tmpLb.setReturnDate(new Date());
+		System.out.println("대출일 : " + tmpLb.getLoanDateStr());
+		System.out.println("반납일 : " + tmpLb.getReturnDateStr());
+		
 		
 	}
 
