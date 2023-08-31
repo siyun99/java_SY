@@ -40,7 +40,7 @@ public class MemberController {
 	}
 	@GetMapping(value="/member/login")
 	public String memberLogin() {
-		return "member/login";
+		return "/member/login";
 	}
 	@PostMapping(value="/member/login")
 	public String memberLoginPost(MemberVO member, Model model) {
